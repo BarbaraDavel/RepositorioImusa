@@ -6,48 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imusa</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon"href="#"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
-            <img src="./img/logo.png" class="logo" alt="logo Municipalidad">
-            <ul class="menu" id="menu">
-                <li><a href="./pages/calendario.html">Calendario</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/quienesSomos.html">Quienes somos</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars"></i>
+        <div class="topnav" id="myTopnav">
+            <img src="/img/logo.png" class="logo" height="48px" alt="logo Municipalidad">
+            <div class="topnav-right">
+                <a class="active" href="/index.html">Inicio</a>
+                <a href="./pages/calendario.html">Calendario</a>
+                <a href="./pages/servicios.html">Servicios</a>
+                <a href="./pages/quienesSomos.html">Quienes somos</a>
+                <a href="./pages/contacto.html">Contacto</a>
             </div>
-        </nav>
-    </header>
-
-    <main class="hero">
-        <div class="info-content">
-            <button><a href="pages/quienesSomos.html">IMUSA</a></button>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-xl"></i>
+            </a>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="municipalidad">
-        <a href="https://www.posadas.gov.ar/">Municipalidad de Posadas></a>
-        </div>
-        <div class="redes-sociales">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        </div>
-    </footer>
+        <main class="hero">
+            <div class="info-content">
+                <button><a href="pages/quienesSomos.html">IMUSA</a></button>
+            </div>
+        </main>
 
+        <footer>
+            <div class="container">
+                <div class="LinkMuni">
+                    <a class="siteMuni" href="https://www.posadas.gov.ar/">Municipalidad de Posadas</a>
+                </div>
+                <div class="RedesSociales">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 </body>
 
 </html>

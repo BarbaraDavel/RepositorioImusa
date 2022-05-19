@@ -127,7 +127,7 @@ footer {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 75px;
+  grid-template-rows: 50px 35px;
   gap: 0px 0px;
   justify-items: center;
 }
@@ -319,6 +319,12 @@ p {
   color: grey;
 }
 
+.turno_tomado{
+  color: rgb(64, 160, 101);
+  padding-top: 15px;
+  font-weight: 600;
+}
+
 /*Quienes somos*/
 
 .body_video {
@@ -357,6 +363,7 @@ p {
   font-weight: 300;
   margin-top: 5px;
   color: #4d4b4b;
+  
 }
 
 .boton_inicio {
@@ -366,7 +373,6 @@ p {
   text-decoration: none;
   text-align: right;
 }
-
 
 /* Navbar - Prueba*/
 

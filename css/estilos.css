@@ -68,19 +68,36 @@ body {
 }
 /*main*/
 
-.container-fluid {
-  background-color: #333;
-  text-align: center;
-  /* height: auto;
-  max-width: 100%; */
-  /* background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/fondonariz.jpg);
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/fondonariz.jpg);
   background-size: cover;
+  max-width: auto;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(8, 1fr); */
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content {
+  text-decoration: none;
+  grid-column: 6 / 10;
+  grid-row: 5 / 9;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero .info-content a {
+  text-decoration: none;
+  color: white;
 }
 
 
+/*main*/
+
+.hero .info-content {
+  grid-column: 6 / 9;
+  grid-row: 4 / 8;
+}
 
 /*FOOTER*/
 

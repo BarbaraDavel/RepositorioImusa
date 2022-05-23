@@ -30,7 +30,7 @@ body {
   }
 
   .navbar {
-    background-color: #414141;
+    background-color: #212529;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
@@ -70,7 +70,7 @@ body {
 /*main*/
 
 .container-fluid {
-  background-color: #333;
+  background-color: #212529;
   text-align: center;
   /* height: auto;
   max-width: 100%; */

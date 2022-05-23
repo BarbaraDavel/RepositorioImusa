@@ -7,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
+@media (min-width: 576px) {
 a {
   text-decoration: none;
 }
@@ -16,7 +16,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-@media (min-width: 576px) {
+
   .respmenu a {
     color: inherit;
     text-decoration: none;

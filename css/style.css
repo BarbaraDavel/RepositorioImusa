@@ -275,6 +275,10 @@ p {
   border-radius: 10px;
 }
 
+.titulo_turnos{
+  background-color: #212529;
+  color: white;
+}
 
 .nombre_mes {
   text-align: center;
@@ -326,7 +330,7 @@ p {
 
 /*Quienes somos*/
 
-.body_video {
+.body {
   background-color: gray;
 }
 
@@ -797,7 +801,7 @@ h2 {
   }
 }
 
-@media(max-width: 345px) {
+@media (min-width: 576px) {
   .wrapper .connect::after {
     left: 32%;
   }

@@ -14,9 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
 
@@ -27,10 +30,10 @@
             <div class="topnav-right">
                 <a class="btn btn-floating m-1" style="background-color: #333333;" href="../index.html" role="button"><i
                         class="bi bi-house-heart"></i></a>
-                <a href="/pages/calendario.html">Calendario</a>
-                <a class="active" href="/pages/servicios.html">Servicios</a>
-                <a href="/pages/quienesSomos.html">Quienes somos</a>
-                <a href="/pages/contacto.html">Contacto</a>
+                <a href="../pages/calendario.html">Calendario</a>
+                <a class="active" href="../pages/servicios.html">Servicios</a>
+                <a href="../pages/quienesSomos.html">Imusa</a>
+                <a href="../pages/contacto.html">Contacto</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars fa-xl"></i>
@@ -40,41 +43,62 @@
 
     <!-- Carrusel -->
 
-
-
-         
-    <div id="slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/veterinaria atendiendo gato.jpg" class="d-block w-100">
+    <div class="card bg-dark text-white">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/veterinaria atendiendo gato.jpg" class="d-block w-100">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Chequeo de rutina</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/eco perro.jpg" class="d-block w-100">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Ecografías</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/movil.jpg" class="d-block w-100">
+                    <div class="card-img-overlay">
+                        <h2 id="h2_imusa" class="card-title">Imusa movil</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/gato con veterinaria.jpg" class="d-block w-100">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Vacunas antirrabicas y antiparasitario</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/esterilizacion perro.jpg" class="d-block w-100">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Esterilizaciones</h2>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../img/gato con veterinaria.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="../img/movil.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="../img/eco perro.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="../img/esterilizacion perro.jpg" class="d-block w-100">
-            </div>
+            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-        <a class="carousel-control-prev"  href="#slider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
     </div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
     <!-- <div class="contenido-total">
         <div class="contenido-carrusel">
             <figure><img src="../img/esterilizargato.jpg"></figure>

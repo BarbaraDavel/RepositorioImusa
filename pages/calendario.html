@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Calendario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Quienes Somos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,13 +23,13 @@
 
 </head>
 
-<body>
+<body class="body_video">
     <header>
         <div class="topnav" id="myTopnav">
             <img src="../img/logo.png" class="logo" height="48px" alt="logo Municipalidad">
             <div class="topnav-right">
                 <a class="btn btn-floating m-1" style="background-color: #333333;" href="../index.html" role="button"><i
-                    class="bi bi-house-heart"></i></a>
+                        class="bi bi-house-heart"></i></a>
                 <a class="active" href="../pages/calendario.html">Calendario</a>
                 <a href="../pages/servicios.html">Servicios</a>
                 <a href="../pages/quienesSomos.html">Imusa</a>
@@ -39,73 +40,74 @@
             </a>
         </div>
     </header>
+    </div>
 
-    <!-- ESTO ES EL CALENDARIO -->
-    <main class="contenedor">
-        <section class="mes">
-            <h2 class="nombre_mes">Mayo</h2>
-        </section>
+    <table class="table table-dark table-hover">
+        
 
-        <section class="dias">
-            <div class="dias_item">Lunes</div>
-            <div class="dias_item">Martes</div>
-            <div class="dias_item">Miercoles</div>
-            <div class="dias_item">Jueves</div>
-            <div class="dias_item">Viernes</div>
-            <div class="dias_item">Sabado</div>
-            <div class="dias_item">Domingo</div>
-        </section>
 
-        <section class="calendario">
-            <div class="calendario_dia">1</div>
-            <div class="calendario_dia">2</div>
-            <div class="calendario_dia">3
-                <div class="turno_tomado">17 hs Barrio Villa Sarita</div>
-            </div>
-            <div class="calendario_dia">4</div>
-            <div class="calendario_dia">5</div>
-            <div class="calendario_dia">6</div>
-            <div class="calendario_dia">7
-                <div class="turno_tomado">Sin servicio</div>
-            </div>
-            <div class="calendario_dia">8</div>
-            <div class="calendario_dia">9</div>
-            <div class="calendario_dia">10</div>
-            <div class="calendario_dia">11</div>
-            <div class="calendario_dia">12</div>
-            <div class="calendario_dia">13</div>
-            <div class="calendario_dia">14
-                <div class="turno_tomado">Sin servicio</div>
-            </div>
-            <div class="calendario_dia">15</div>
-            <div class="calendario_dia">16</div>
-            <div class="calendario_dia">17</div>
-            <div class="calendario_dia">18</div>
-            <div class="calendario_dia">19
-                <div class="turno_tomado">19 hs Barrio Itaembé Guazú</div>
-            </div>
-            <div class="calendario_dia">20</div>
-            <div class="calendario_dia">21
-                <div class="turno_tomado">Sin servicio</div>
-            </div>
-            <div class="calendario_dia">22</div>
-            <div class="calendario_dia">23
-                <div class="turno_tomado">18 hs Barrio 32-33</div>
-            </div>
-            <div class="calendario_dia">24</div>
-            <div class="calendario_dia">25</div>
-            <div class="calendario_dia">26</div>
-            <div class="calendario_dia">27</div>
-            <div class="calendario_dia">28
-                <div class="turno_tomado">Sin servicio</div>
-            </div>
-            <div class="calendario_dia">29</div>
-            <div class="calendario_dia">30</div>
-            <div class="calendario_dia">31</div>
-        </section>
-    </main>
 
-    <!-- TERMINA EL CALENDARIO -->
+
+        <thead>
+            <tr>
+                <th scope="col">Día</th>
+                <th scope="col">8 hs - 11 hs</th>
+                <th scope="col">12 hs - 15 hs</th>
+                <th scope="col">16 hs - 19 hs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">26/05</th>
+                <td>Barrio Hermoso</td>
+                <td>Barrio Itaembe Guazú</td>
+                <td>Barrio Villa Sarita</td>
+            </tr>
+            <tr>
+                <th scope="row">27/05</th>
+                <td>Barrio Centro</td>
+                <td>Barrio 32-33</td>
+                <td>Barrio Itaembe Miní</td>
+            </tr>
+            <tr>
+                <th scope="row">28/05</th>
+                <td>Barrio 9 de Julio</td>
+                <td>Barrio Aguacate</td>
+                <td>Barrio Procrear</td>
+            </tr>
+            <tr>
+                <th scope="row">30/05</th>
+                <td>Barrio Kirchner</td>
+                <td>Barrio Pueblo Chico</td>
+                <td>Barrio Villa Cabello</td>
+            </tr>
+            <tr>
+                <th scope="row">31/05</th>
+                <td>Barrio Santa Julia</td>
+                <td>DISPONIBLE</td>
+                <td>DISPONIBLE</td>
+            </tr>
+            <tr>
+                <th scope="row">01/06</th>
+                <td>DISPONIBLE</td>
+                <td>DISPONIBLE</td>
+                <td>DISPONIBLE</td>
+            </tr>
+            <tr>
+                <th scope="row">02/06</th>
+                <td>DISPONIBLE</td>
+                <td>DISPONIBLE</td>
+                <td>DISPONIBLE</td>
+            </tr>
+            <tr>
+                <th scope="row">28/05</th>
+                <td>DISPONIBLE</td>
+                <td>Barrio San jorge</td>
+                <td>Barrio Urquiza</td>
+            </tr>
+        </tbody>
+    </table>
+
 
     <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
@@ -147,6 +149,8 @@
             }
         }
     </script>
+
+
 </body>
 
 </html>

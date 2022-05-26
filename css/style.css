@@ -8,13 +8,13 @@
 }
 
 @media (min-width: 576px) {
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 
 
   .respmenu a {
@@ -111,9 +111,10 @@ body {
   padding: 1em 0;
   text-align: center;
   margin-top: auto;
- 
-  
+
+
 }
+
 /* @media (min-width: 576px) {
 
 .container {
@@ -273,6 +274,15 @@ p {
   }
 }
 
+  .modal-header {
+    background: #212529;
+    color: white ;
+    text-align: center;
+  }
+
+  .modal-header button{
+    color: white ;
+  }
 /*Calendario*/
 
 .contenedor {
@@ -284,7 +294,7 @@ p {
   border-radius: 10px;
 }
 
-.titulo_turnos{
+.titulo_turnos {
   background-color: #212529;
   color: white;
 }

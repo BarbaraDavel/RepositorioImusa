@@ -1,0 +1,13 @@
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# Ignora la carpeta node_modules
+node_modules
+
+# Ignora la carpeta .vscode
+.vscode
+
+# Ignora la carpeta rar
+.rar
+
+# Ignora la carpeta 

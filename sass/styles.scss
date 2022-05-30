@@ -1,0 +1,830 @@
+@import "colors"; 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,500&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  .respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid $color_azul;
+    max-width: 200px;
+    background: $color_azul;
+    font-variant: small-caps;
+    text-shadow: 1px 1px $color_negro;
+  }
+
+  .navbar {
+    background-color: $color_primario;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+
+  .navbar .logo {
+    width: 140px;
+    grid-column: 2 / 3;
+  }
+
+  .navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar .menu li {
+    list-style: none;
+  }
+
+  .navbar .menu a {
+    text-decoration: none;
+    color: $color_blanco;
+    cursor: pointer;
+
+  }
+
+  .navbar .menu a:hover {
+    color: $color_blanco;
+  }
+
+  .navbar .menu-bar {
+    display: none;
+  }
+}
+
+/*main*/
+
+.container-fluid {
+  background-color: $color_primario;
+  text-align: center;
+  /* height: auto;
+  max-width: 100%; */
+  /* background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/fondonariz.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(8, 1fr); */
+}
+
+
+
+/*FOOTER*/
+
+/* .footer {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: #414141;
+  grid-template-areas:
+    "municipalidad redes-sociales";
+}
+
+.footer .muncipalidad a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+} */
+
+
+/*footer prueba*/
+
+
+.footer {
+  background-color: $color_primario;
+  padding: 1em 0;
+  text-align: center;
+  margin-top: auto;
+
+
+}
+
+/* @media (min-width: 576px) {
+
+.container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 35px;
+  gap: 0px 0px;
+  justify-items: center;
+}
+
+.LinkMuni {
+  grid-area: 1 / 1 / 3 / 2;
+  padding-top: 12px;
+}
+
+.siteMuni {
+  color: white
+}
+
+.RedesSociales {
+  grid-area: 2 / 1 / 3 / 2;
+  color: #04AA6D;
+}
+
+.fa-brands {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+} */
+
+/*Contacto*/
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: $color_gris;
+  background-size: 330vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: $color_blanco;
+  padding-left: 30px;
+}
+
+
+input {
+  background-color: $color_blanco;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $color_primario;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+textarea {
+  background-color: $color_blanco;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $color_primario;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+
+label {
+  display: block;
+  float: center;
+}
+
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: $color_primario;
+  border-color: $color_primario;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+
+button p {
+  color: $color_blanco;
+}
+
+
+span {
+  color: $color_negro;
+}
+
+@media (min-width: 576px) {
+  .aviso {
+    font-size: 13px;
+    color: $color_negro;
+  }
+}
+
+h1 {
+  font-size: 39px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  color: $color_verdeagua;
+}
+
+p {
+  font-size: 14px;
+  color: $color_negro;
+}
+
+@media (min-width: 576px) {
+  ::-webkit-input-placeholder {
+    color: $color_negro;
+  }
+
+
+  ::-webkit-textarea-placeholder {
+    color: $color_negro;
+  }
+
+
+  .formulario input:focus {
+    outline: 0;
+    border: 1px solid $color_negro;
+  }
+
+
+  .formulario textarea:focus {
+    outline: 0;
+    border: 1px solid $color_negro;
+  }
+}
+
+  .modal-header {
+    background: $color_primario;
+    color: $color_blanco ;
+    text-align: center;
+  }
+
+  .modal-header button{
+    color: $color_blanco ;
+  }
+/*Calendario*/
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  background: $color_blanco;
+  max-width: 1200px;
+  box-shadow: 0 2px 20px $color_primario;
+  border-radius: 10px;
+}
+
+.titulo_turnos {
+  background-color: $color_primario;
+  color: $color_blanco;
+}
+
+.nombre_mes {
+  text-align: center;
+  background-color: $color_gris;
+  color: $color_gris;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  height: 45px;
+  border-bottom: 1px solid $color_negro;
+  border-top: 1px solid $color_negro;
+  color: $color_gris;
+  font-weight: bold;
+}
+
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 120px;
+}
+
+.calendario_dia {
+  border-bottom: 1px solid $color_negro;
+  border-top: 1px solid $color_negro;
+  text-align: center;
+  padding: 14px 20px;
+  color: $color_gris;
+}
+
+.turno_tomado {
+  color: $color_verdeagua;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.sacar_turno {
+  background-color: $color_primario;
+  color: $color_blanco;
+}
+
+/*MODAL*/
+
+
+
+/*Quienes somos*/
+
+.body {
+  background-color: $color_gris;
+}
+
+.contenedor_todo {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px;
+  background: $color_grismuyclaro;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 6px solid $color_negro;
+}
+
+
+.titulo_video {
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: $color_gris;
+  font-weight: bold;
+  text-shadow: 0px 0px 6px $color_blanco;
+
+}
+
+.contenedor_todo iframe {
+  width: 450px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 7px;
+}
+
+.contenedor_todo p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: $color_primario;
+
+}
+
+.boton_inicio {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* Navbar - Prueba*/
+
+/* Agrego un fondo de color oscuro al nav */
+.topnav {
+  background-color: $color_primario;
+  overflow: hidden;
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+/* Le doy formato a los links dentro del nav bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: $color_blanco;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-right {
+  float: right;
+  margin-right: 10px;
+}
+
+/* Cambio el color de los links al hacer hover */
+.topnav a:hover {
+  background-color: $color_verdeagua;
+  color: $color_negro;
+}
+
+/* Agrego un highlight cuando la clase esta activa */
+.topnav a.active {
+  background-color: $color_verdeagua;
+  color: $color_blanco;
+}
+
+/* Escondo los link cuando trabajo con pantalla mobile */
+.topnav .icon {
+  display: none;
+}
+
+/*Servicios*/
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 80px;
+  color: $color_gris;
+  text-shadow: 0px 0px 6px $color_blanco;
+}
+
+#h2_imusa {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 7px;
+  color: $color_negro;
+  text-shadow: 0px 0px 6px $color_negro;
+  ;
+}
+
+.contenido-total {
+  width: 210px;
+  margin: auto;
+  perspective: 600px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.contenido-carrusel {
+  width: 100%;
+  position: absolute;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.contenido-carrusel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+
+.contenido-carrusel figure {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px $color_negro;
+  transition: all 300ms;
+}
+
+.contenido-carrusel figure:hover {
+  box-shadow: 0px 0px 0px 0px $color_negro;
+  transition: all 300ms;
+}
+
+.contenido-carrusel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px);
+}
+
+.contenido-carrusel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+.contenido-carrusel img {
+  width: 100%;
+  transition: all 300ms;
+}
+
+.contenido-carrusel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.volver {
+  align-content: center;
+}
+
+/* medias queries para el navbar */
+
+
+.topnav a {
+  display: none;
+}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav.responsive {
+  position: relative;
+}
+
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body_contacto {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, $color_verdeloro, $color_verdeagua);
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  min-height: 300px;
+  background-color: $color_primario;
+  border-top: 1px solid $color_gris;
+  border-left: 1px solid $color_gris;
+  border-radius: 15px;
+}
+
+.wrapper .h5 {
+  color: $color_grisclaro;
+}
+
+.wrapper .form-group {
+  border-bottom: 1px solid $color_grisclaro;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper .form-group:hover {
+  border-bottom: 1px solid $color_grisclaro;
+}
+
+.wrapper .form-group .icon {
+  color: $color_grisclaro;
+}
+
+.wrapper .form-group .form-control {
+  background: inherit;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  color: $color_grisclaro;
+}
+
+.wrapper .form-group input::placeholder {
+  color: $color_grisclaro;
+}
+
+.wrapper .form-group input:focus::placeholder {
+  opacity: 0;
+}
+
+.wrapper .form-group .fa-phone {
+  transform: rotate(90deg);
+}
+
+
+.wrapper .option {
+  color: $color_grisclaro;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none
+}
+
+.wrapper .option:hover {
+  color: $color_grisclaro;
+}
+
+.wrapper .option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0
+}
+
+.wrapper .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: inherit;
+  border: 2px solid $color_grisclaro;
+  border-radius: 2px
+}
+
+.wrapper .option input:checked~.checkmark {
+  transition: 300ms ease-in-out all
+}
+
+.wrapper .checkmark:after {
+  content: "\2713";
+  position: absolute;
+  display: none;
+  font-weight: 600;
+  color: $color_grisclaro;
+  font-size: 0.9rem;
+}
+
+.wrapper .option input:checked~.checkmark:after {
+  display: block
+}
+
+.wrapper .option .checkmark:after {
+  left: 2px;
+  top: -4px;
+  width: 5px;
+  height: 10px
+}
+
+.wrapper .btn.btn-primary {
+  position: relative;
+  color: $color_blanco;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border: 1px solid $color_grisclaro;
+  background-color: inherit;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.wrapper .btn.btn-primary:hover {
+  background-color: $color_primario;
+  color: $color_grisclaro;
+}
+
+.wrapper .terms {
+  color: $color_gris;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.wrapper .terms a {
+  text-decoration: none;
+  color: $color_grisclaro;
+}
+
+.wrapper .terms a:hover {
+  color: $color_blanco;
+}
+
+.wrapper .connect {
+  position: relative;
+}
+
+.wrapper .connect::after {
+  content: "or";
+  position: absolute;
+  top: -12px;
+  width: 80px;
+  left: 39%;
+  text-align: center;
+  color: $color_grisclaro;
+  z-index: 100;
+  background-color: $color_gris;
+  background-color: $color_azul;
+}
+
+.wrapper .social-links {
+  margin-top: 50px;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper .social-links li a {
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  background-color: $color_primario;
+  border: 1px solid $color_gris;
+  border-right: 1px solid $color_gris;
+  border-bottom: 1px solid $color_gris;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: $color_blanco;
+  border-radius: 6px;
+  box-shadow: 0 5px 30px $color_azul;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.wrapper .social-links li a:hover {
+  transform: translateY(-20px);
+}
+
+.wrapper .social-links li a::before,
+.wrapper .btn.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  background-color: $color_grisclaro;
+  transform: skew(45deg) translateX(130px);
+  transition: .5s;
+  opacity: 0;
+}
+
+.wrapper .social-links li a:hover:before,
+.wrapper .btn.btn-primary:hover::before {
+  opacity: 1;
+  transform: skew(45deg) translateX(-130px);
+}
+
+@media(max-width: 460px) {
+  .wrapper {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .wrapper .connect::after {
+    left: 38%;
+  }
+}
+
+@media (min-width: 576px) {
+  .wrapper .connect::after {
+    left: 32%;
+  }
+}

@@ -47,7 +47,7 @@
 
 /*main*/
 .container-fluid {
-  background-color: #444647;
+  background-color: #808080;
   text-align: center;
   /* height: auto;
   max-width: 100%; */
@@ -179,7 +179,7 @@ p {
   border-radius: 10px; }
 
 .titulo_turnos {
-  background-color: #444647;
+  background-color: #808080;
   color: #ffffff; }
 
 .nombre_mes {
@@ -264,7 +264,7 @@ p {
 /* Navbar - Prueba*/
 /* Agrego un fondo de color oscuro al nav */
 .topnav {
-  background-color: #444647;
+  background-color: #808080;
   overflow: hidden; }
 
 .logo {
